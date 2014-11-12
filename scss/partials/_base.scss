@@ -6,10 +6,26 @@ a {
 	margin: 0 auto;
 }
 
+/* Support a widely-adopted but non-standard selector for text selection styles
+ * to achieve a better experience. See http://core.trac.wordpress.org/ticket/25898.
+ */
+::selection {
+	background: $blue-dark-iisg;
+}
+
+::-moz-selection {
+	background: $blue-dark-iisg;
+}
+
+/* NAVIGATION */
+.site-navigation a:hover {
+	color: #F0F0F0;
+}
+
 /* MAIN CONTENT */
 
 .content-area {
-	background: yellow;
+	background: #FFF;
 }
 
 .site-content .entry-header, 

@@ -22,9 +22,25 @@
   margin: 0 auto;
 }
 
+/* Support a widely-adopted but non-standard selector for text selection styles
+ * to achieve a better experience. See http://core.trac.wordpress.org/ticket/25898.
+ */
+::selection {
+  background: #316aae;
+}
+
+::-moz-selection {
+  background: #316aae;
+}
+
+/* NAVIGATION */
+.site-navigation a:hover {
+  color: #F0F0F0;
+}
+
 /* MAIN CONTENT */
 .content-area {
-  background: yellow;
+  background: #FFF;
 }
 
 .site-content .entry-header,
@@ -46,33 +62,99 @@
 }
 
 /* HEADER */
+#site-header {
+  display: none;
+  position: relative;
+}
+#site-header img {
+  padding: 15px 30px;
+}
+#site-header ul.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  list-style-type: none;
+}
+#site-header ul.menu li {
+  display: inline-block;
+  font-size: 11px;
+  padding: 12px 12px 6px 0;
+}
+#site-header ul.menu li a {
+  text-transform: uppercase;
+}
+
 .site-header {
   background: -moz-linear-gradient(top, #407ec9, #316aae);
   background: -webkit-linear-gradient(top, #407ec9, #316aae);
   background: linear-gradient(to bottom, #407ec9, #316aae);
 }
 
-#site-header img {
-  padding: 10px 30px;
+/* HEADER - navigation */
+.site-navigation .current_page_item > a,
+.site-navigation .current_page_ancestor > a,
+.site-navigation .current-menu-item > a,
+.site-navigation .current-menu-ancestor > a {
+  color: #FFF;
+}
+
+/* HEADER - search */
+.search-toggle {
+  background-color: #316aae;
+}
+.search-toggle:hover, .search-toggle:active {
+  background-color: #c964cf;
+}
+
+.search-toggle.active {
+  background-color: #c964cf;
+}
+
+.search-box {
+  background-color: #c964cf;
 }
 
 @media screen and (min-width: 594px) {
   .site-content .entry-header,
   .site-content .entry-content,
   .site-content .comments-area {
+    box-sizing: border-box;
     padding-right: 30px;
     padding-left: 30px;
   }
 }
 @media screen and (min-width: 673px) {
   .content-area {
-    max-width: 100%;
+    max-width: 373px;
+  }
+}
+@media screen and (min-width: 783px) {
+  #site-header {
+    display: block;
+  }
+
+  .site-title {
+    display: none;
+  }
+
+  .primary-navigation {
+    float: left;
+  }
+  .primary-navigation li:hover > a, .primary-navigation li.focus > a {
+    background-color: #c964cf;
+    color: #fff;
+  }
+  .primary-navigation ul ul {
+    background-color: #316aae;
+  }
+  .primary-navigation ul ul a:hover, .primary-navigation ul ul li.focus > a {
+    background-color: #c964cf;
   }
 }
 @media screen and (min-width: 846px) {
   .content-area,
   .content-sidebar {
-    padding-top: 24px;
+    padding-top: 48px;
   }
 }
 @media screen and (min-width: 1008px) {
@@ -97,6 +179,21 @@
 @media screen and (min-width: 1040px) {
   .content-area {
     max-width: 740px;
+  }
+
+  .full-width .archive-header,
+  .full-width .comments-area,
+  .full-width .image-navigation,
+  .full-width .page-header,
+  .full-width .page-content,
+  .full-width .post-navigation,
+  .full-width .site-content .entry-header,
+  .full-width .site-content .entry-content,
+  .full-width .site-content .entry-summary,
+  .full-width .site-content footer.entry-meta {
+    box-sizing: border-box;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 @media screen and (min-width: 1080px) {

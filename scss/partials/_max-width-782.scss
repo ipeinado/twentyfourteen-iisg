@@ -1,3 +1,26 @@
 @media screen and (min-width: 783px) {
-	
+	#site-header {
+		display: block;
+	}
+
+	.site-title {
+		display: none;
+	}
+
+	.primary-navigation {
+		float: left;
+
+		li:hover > a, li.focus > a {
+			background-color: $purple-iisg;
+			color: #fff;	
+		}
+
+		ul ul {
+			background-color: $blue-dark-iisg;
+
+			a:hover, li.focus > a {
+				background-color: $purple-iisg;
+			}
+		}
+	}
 }

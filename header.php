@@ -37,12 +37,19 @@
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 			<img src="<?php header_image(); ?>" width="240px" height="auto" alt="">
 		</a>
+
+		<?php wp_nav_menu( array('menu' => 'Header Menu' )); ?>
+	
 	</div>
 	<?php endif; ?>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="header-main">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="site-title">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/iisg_logo_neg_sm.png" alt="Logo Instituto de Investigación Sanitaria Getafe" />
+				</a>
+			</h1>
 
 			<div class="search-toggle">
 				<a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'twentyfourteen' ); ?></a>

@@ -24,6 +24,21 @@
 		max-width: 740px;
 	}
 
+	.full-width .archive-header, 
+	.full-width .comments-area, 
+	.full-width .image-navigation, 
+	.full-width .page-header, 
+	.full-width .page-content, 
+	.full-width .post-navigation, 
+	.full-width .site-content .entry-header, 
+	.full-width .site-content .entry-content, 
+	.full-width .site-content .entry-summary, 
+	.full-width .site-content footer.entry-meta {
+		box-sizing: border-box;
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+
 }
 
 @media screen and (min-width: 1080px) {
