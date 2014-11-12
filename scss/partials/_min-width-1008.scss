@@ -1,23 +1,51 @@
 @media screen and (min-width: 1008px) {
+	.site:before {
+		background: #FFF;
+		width: 0;
+	}
+
+	.site-content, .site-main .widecolumn {
+		margin-left: 0;
+	}
+
+	.content-area {
+		max-width: 708px;
+	}
+
+	#secondary {
+		float: right;
+		width: 240px;
+	}
 
 }
 
 @media screen and (min-width: 1040px) {
+	.content-area {
+		max-width: 740px;
+	}
 
 }
 
 @media screen and (min-width: 1080px) {
-
+	.content-area {
+		max-width: 780px;
+	}
 }
 
 @media screen and (min-width: 1110px) {
-
+	.content-area {
+		max-width: 810px;
+	}
 }
 
 @media screen and (min-width: 1218px) {
-
+	.content-area {
+		max-width: 918px;
+	}
 }
 
 @media screen and (min-width: 1260px) {
-
+	.content-area {
+		max-width: 960px;
+	}
 }

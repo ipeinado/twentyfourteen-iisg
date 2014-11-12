@@ -1,2 +1,11 @@
-$blue-iigs: #407EC9;
-$purple-iigs: #C964CF;
+$blue-iisg: #407EC9;
+$blue-dark-iisg: #316AAE;
+$purple-iisg: #C964CF;
+
+.links-iisg {
+	color: $blue-iisg;
+
+	&:hover {
+		color: $purple-iisg;
+	}
+}

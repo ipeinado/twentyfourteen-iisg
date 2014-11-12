@@ -1,0 +1,39 @@
+a {
+	@extend .links-iisg;
+}
+
+.site {
+	margin: 0 auto;
+}
+
+/* MAIN CONTENT */
+
+.content-area {
+	background: yellow;
+}
+
+.site-content .entry-header, 
+.site-content .entry-content, 
+.site-content .entry-summary, 
+.site-content .entry-meta, 
+.page-content {
+	margin: 0;
+	max-width: 100%;
+}
+
+.comments-area {
+	max-width: 100%;
+}
+
+/* SECONDARY */
+
+.widget a {
+	@extend .links-iisg;
+}
+
+.widget-title, .widget-title a {
+	color: #000;
+}
+
+
+@import "header";

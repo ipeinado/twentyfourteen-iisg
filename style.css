@@ -11,3 +11,111 @@
 */
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+.links-iisg, a, .widget a {
+  color: #407ec9;
+}
+.links-iisg:hover, a:hover {
+  color: #c964cf;
+}
+
+.site {
+  margin: 0 auto;
+}
+
+/* MAIN CONTENT */
+.content-area {
+  background: yellow;
+}
+
+.site-content .entry-header,
+.site-content .entry-content,
+.site-content .entry-summary,
+.site-content .entry-meta,
+.page-content {
+  margin: 0;
+  max-width: 100%;
+}
+
+.comments-area {
+  max-width: 100%;
+}
+
+/* SECONDARY */
+.widget-title, .widget-title a {
+  color: #000;
+}
+
+/* HEADER */
+.site-header {
+  background: -moz-linear-gradient(top, #407ec9, #316aae);
+  background: -webkit-linear-gradient(top, #407ec9, #316aae);
+  background: linear-gradient(to bottom, #407ec9, #316aae);
+}
+
+#site-header img {
+  padding: 10px 30px;
+}
+
+@media screen and (min-width: 594px) {
+  .site-content .entry-header,
+  .site-content .entry-content,
+  .site-content .comments-area {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 673px) {
+  .content-area {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 846px) {
+  .content-area,
+  .content-sidebar {
+    padding-top: 24px;
+  }
+}
+@media screen and (min-width: 1008px) {
+  .site:before {
+    background: #FFF;
+    width: 0;
+  }
+
+  .site-content, .site-main .widecolumn {
+    margin-left: 0;
+  }
+
+  .content-area {
+    max-width: 708px;
+  }
+
+  #secondary {
+    float: right;
+    width: 240px;
+  }
+}
+@media screen and (min-width: 1040px) {
+  .content-area {
+    max-width: 740px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .content-area {
+    max-width: 780px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .content-area {
+    max-width: 810px;
+  }
+}
+@media screen and (min-width: 1218px) {
+  .content-area {
+    max-width: 918px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .content-area {
+    max-width: 960px;
+  }
+}
