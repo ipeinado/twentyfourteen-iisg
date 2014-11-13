@@ -1,0 +1,31 @@
+/* FOOTER */
+.site-footer {
+	background-color: $grey-color;
+
+	a {
+		color: #FFF;
+
+		&:hover {
+			color: #FFF;
+			text-decoration: underline;
+		}
+	}
+
+	.footer-sidebar {
+		ul.menu {
+			li a  {
+				text-transform: uppercase;
+			}
+
+			ul.sub-menu {
+				li a {
+					text-transform: none;
+				}
+			}
+		}
+	}
+}
+
+.footer-collaborators {
+	padding: 30px;
+}

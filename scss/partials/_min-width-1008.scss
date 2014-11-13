@@ -13,8 +13,33 @@
 	}
 
 	#secondary {
+		display: block;
 		float: right;
 		width: 240px;
+	}
+
+	.site-footer {
+		background: $grey-color url(./images/iisg_logo_neg_big.png);
+		background-repeat: no-repeat;
+		background-position: 20px 48px;
+		padding-left: 240px;
+	}
+
+	.footer-collaborators {
+
+		display: block;
+
+		.footer-collaborators-img {
+			display: inline-block;
+			max-width: 33%;
+			vertical-align: middle;
+		}
+
+		img {
+			max-width: 300px;
+			box-sizing: border-box;
+			padding: 0 20px;
+		}
 	}
 
 }

@@ -9,7 +9,12 @@ function enqueue_parent_theme_style() {
 
 // Register menus
 register_nav_menus( array(
-	'header_menu' => 'Header Menu'
+	'header_menu' => 'Header Menu',
+	'institute_menu' => 'Institute Menu',
+	'research_menu' => 'Research Menu',
+	'innovation_menu' => 'Innovation Menu',
+	'infrastructures_menu' => 'Infrastructures Menu',
+	'utilities_menu' => 'Utilities Menu'
 ) );
 
 ?>
