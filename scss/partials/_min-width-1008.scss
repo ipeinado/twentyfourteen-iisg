@@ -12,10 +12,41 @@
 		max-width: 708px;
 	}
 
-	#secondary {
+	.front-page-slideshow {
+		height: 380px;
+	}
+
+	.front-page-slide-content {
+		box-sizing: border-box;
+		height: 140px;
+		width: 100%;
+		padding: 10px 20px;
+		background-color: $blue-dark-iisg;
+		position: absolute;
+		top: 240px;
+		z-index: 2;
+
+		h1 a {
+			color: #FFF;
+		}
+
+		p {
+			color: #FFF;
+		}
+
+	}
+
+	#secondary, .front-page-sidebar {
 		display: block;
 		float: right;
 		width: 240px;
+	}
+
+	.front-page-sidebar {
+		background: transparent;
+		padding-top: 24px;
+		margin: 0 0 0 -100%;
+		min-height: 100vh;
 	}
 
 	.site-footer {
@@ -49,6 +80,10 @@
 		max-width: 740px;
 	}
 
+	.content-area .breadcrumbs {
+		display: block;
+	}
+
 	.full-width .archive-header, 
 	.full-width .comments-area, 
 	.full-width .image-navigation, 
@@ -58,7 +93,8 @@
 	.full-width .site-content .entry-header, 
 	.full-width .site-content .entry-content, 
 	.full-width .site-content .entry-summary, 
-	.full-width .site-content footer.entry-meta {
+	.full-width .site-content footer.entry-meta,
+	.full-width .site-content .breadcrumbs {
 		box-sizing: border-box;
 		padding-left: 120px;
 		padding-right: 120px;

@@ -52,8 +52,48 @@
   max-width: 100%;
 }
 
+.site-content .breadcrumbs {
+  padding: 0 10px 12px;
+  color: #6f6f6f;
+}
+
 .comments-area {
   max-width: 100%;
+}
+
+.front-page-template h1, .front-page-sidebar h1 {
+  margin-bottom: 12px;
+  margin: 0 0 12px 0;
+  color: #000;
+}
+
+.front-page-slideshow {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.front-page-slideshow a.stop-slideshow-link {
+  color: #000;
+  background: #FFF;
+  padding: 0.5em 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+}
+.front-page-slideshow #slide1, .front-page-slideshow #slide2 {
+  display: none;
+}
+
+.front-page-slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.front-page-slide img {
+  width: 100%;
 }
 
 /* SECONDARY */
@@ -165,7 +205,8 @@
 
   .site-content .entry-header,
   .site-content .entry-content,
-  .site-content .comments-area {
+  .site-content .comments-area,
+  .site-content .breadcrumbs {
     box-sizing: border-box;
     padding-right: 30px;
     padding-left: 30px;
@@ -205,6 +246,10 @@
   .content-sidebar {
     padding-top: 48px;
   }
+
+  .content-area.front-page-template {
+    padding-top: 24px;
+  }
 }
 @media screen and (min-width: 1008px) {
   .site:before {
@@ -220,10 +265,38 @@
     max-width: 708px;
   }
 
-  #secondary {
+  .front-page-slideshow {
+    height: 380px;
+  }
+
+  .front-page-slide-content {
+    box-sizing: border-box;
+    height: 140px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #316aae;
+    position: absolute;
+    top: 240px;
+    z-index: 2;
+  }
+  .front-page-slide-content h1 a {
+    color: #FFF;
+  }
+  .front-page-slide-content p {
+    color: #FFF;
+  }
+
+  #secondary, .front-page-sidebar {
     display: block;
     float: right;
     width: 240px;
+  }
+
+  .front-page-sidebar {
+    background: transparent;
+    padding-top: 24px;
+    margin: 0 0 0 -100%;
+    min-height: 100vh;
   }
 
   .site-footer {
@@ -252,6 +325,10 @@
     max-width: 740px;
   }
 
+  .content-area .breadcrumbs {
+    display: block;
+  }
+
   .full-width .archive-header,
   .full-width .comments-area,
   .full-width .image-navigation,
@@ -261,7 +338,8 @@
   .full-width .site-content .entry-header,
   .full-width .site-content .entry-content,
   .full-width .site-content .entry-summary,
-  .full-width .site-content footer.entry-meta {
+  .full-width .site-content footer.entry-meta,
+  .full-width .site-content .breadcrumbs {
     box-sizing: border-box;
     padding-left: 120px;
     padding-right: 120px;

@@ -37,8 +37,51 @@ a {
 	max-width: 100%;
 }
 
+.site-content .breadcrumbs {
+	padding: 0 10px 12px;
+	color: $grey-color;
+}
+
 .comments-area {
 	max-width: 100%;
+}
+
+.front-page-template h1, .front-page-sidebar h1 {
+	margin-bottom: 12px;
+	margin: 0 0 12px 0;
+	color: #000;
+}
+
+.front-page-slideshow {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+
+	a.stop-slideshow-link {
+		color: #000;
+		background: #FFF;
+		padding: 0.5em 1em;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2; 	
+		opacity: 0;
+	}
+
+	#slide1, #slide2 {
+		display: none;
+	}
+}
+
+.front-page-slide {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+
+	img {
+		width: 100%;
+	}
 }
 
 /* SECONDARY */
