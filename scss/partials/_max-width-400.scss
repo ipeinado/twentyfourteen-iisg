@@ -1,5 +1,74 @@
 @media screen and (max-width: 400px) {
 
+	.front-page-slideshow {
+		box-sizing: border-box;
+
+		.stop-slideshow-link {
+			@include link-button;
+			font-size: .9em;
+			margin: 0 10px;
+		}
+		
+		.front-page-slide {
+			padding: 10px;
+			text-align: justify;
+
+			img {
+				margin-bottom: 1em;
+			}
+		}
+
+		.front-page-slideshow-buttons {
+			padding: 0 10px;
+			text-align: right;
+		}
+	}
+
+	#latest-news {
+		
+		margin: 20px 0;
+
+		#latest-news-header {
+			display: block;
+			clear: both;
+			padding: 0 10px;
+			margin-bottom: 10px;
+
+			.header-link {
+				@include link-button;
+				font-size: .9em;
+			}
+		}
+
+		.latest-new {
+
+			padding: 10px 10px 0 10px;
+			border-bottom: 1px dotted #CCC;
+
+			.latest-new-img {
+				width: 100%;
+				height: 120px;
+				overflow: hidden;
+				margin-bottom: 1em;
+			}
+
+			.latest-new-content {
+				overflow: hidden;
+
+				h2 {
+					font-size: 18px;
+					margin: 0 0 6px 0;
+				}
+
+				p.latest-new-date {
+					font-size: 0.8em;
+					color: $grey-color;
+					margin-bottom: 12px;
+				}
+			}
+		}
+	}
+
 	.footer-collaborators {
 
 		text-align: center;
@@ -13,9 +82,129 @@
 }
 
 @media screen and (min-width: 401px) {
+	.front-page-slideshow {
+		padding: 0 20px;
+		margin-bottom: 20px;
+
+		.stop-slideshow-link {
+			@include link-button;
+			display: inline-block;
+			margin: 0 20px 20px 0;
+			font-size: .9em;
+		}
+	}
+
+	.front-page-slide-img {
+		height: 220px;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+
+	.header-link {
+		@include link-button;
+		position: absolute;
+		top: 0;
+		right: 0px;
+		font-size: .9em;
+	}
+
+	#latest-news {
+		overflow: hidden;
+		margin: 0 20px;
+	}
+
+	#latest-news-header {
+		clear: both;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.latest-new {
+		padding: 10px 0 0 0;
+		float: left;
+		clear: both;
+
+	}
+
+	.latest-new-img {
+		width: 120px;
+		height: 120px;
+		overflow: hidden;
+		float: left;
+		margin-right: 20px;
+
+		img {
+			
+		}
+	}
+
+	.latest-new-content {
+		overflow: hidden;
+		font-size: .9em;
+
+		h2 {
+			font-size: 18px;
+			margin: 0 0 6px 0;
+		}
+
+
+		p.latest-new-date {
+			font-size: 0.8em;
+			color: $grey-color;
+			margin-bottom: 12px;
+		}
+	}
+
+	.front-page-sidebar {
+		padding: 24px 20px;
+
+		img {
+			width: 360px;
+		}
+	}
 }
 
 @media screen and (min-width: 594px) {
+
+	.front-page-slideshow {
+		height: 320px;
+		padding: 0 20px;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 36px; 
+		
+		.stop-slideshow-link {
+			position: absolute;
+			top: 0;
+		}
+	}
+
+	.front-page-slide {
+		position: relative;
+
+	}
+
+	.front-page-slide-img {
+		height: auto;
+		position: absolute;
+		top: 0;
+
+	}
+
+	.front-page-slide-content {
+		background-color: rgba(49, 106, 174, .8);
+		height: 140px;
+		width: 100%;
+		position: absolute;
+		top: 180px;
+		padding: 10px 20px;
+		box-sizing: border-box;
+
+		h1, p {
+			color: #FFF;
+		}
+
+	}	
 
 	.footer-collaborators {
 		text-align: center;

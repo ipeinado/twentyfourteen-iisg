@@ -6,6 +6,12 @@ function enqueue_parent_theme_style() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
 }
 
+// Limit excerpt size
+function custom_excerpt_length( $length ) {
+	return 25;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 
 // Register menus
 register_nav_menus( array(

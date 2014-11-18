@@ -47,26 +47,17 @@ a {
 }
 
 .front-page-template h1, .front-page-sidebar h1 {
+	font-family: 'Lato', serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	line-height: 1.0909090909;
 	margin-bottom: 12px;
 	margin: 0 0 12px 0;
 	color: #000;
 }
 
 .front-page-slideshow {
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-
-	a.stop-slideshow-link {
-		color: #000;
-		background: #FFF;
-		padding: 0.5em 1em;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 2; 	
-		opacity: 0;
-	}
 
 	#slide1, #slide2 {
 		display: none;
@@ -74,13 +65,25 @@ a {
 }
 
 .front-page-slide {
-	position: absolute;
-	top: 0;
-	width: 100%;
 	z-index: 1;
 
 	img {
 		width: 100%;
+	}
+}
+
+.front-page-sidebar {
+	
+	overflow: hidden;
+
+	ul.programs-list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			margin-bottom: 1em;
+		}
 	}
 }
 

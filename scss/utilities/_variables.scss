@@ -10,3 +10,16 @@ $grey-color: #6F6F6F;
 		color: $purple-iisg;
 	}
 }
+
+@mixin link-button {
+	color: $grey-color;
+	padding: .3em .6em;
+	border: 1px solid #CCC;
+	@include border-radius(4px);
+
+	&:hover {
+		background: $purple-iisg;
+		color: #FFF;
+		border-color: #FFF;
+	}
+}
